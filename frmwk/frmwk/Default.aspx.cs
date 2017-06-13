@@ -11,6 +11,15 @@ namespace frmwk
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (!IsPostBack)
+			{
+				TextBox1.Text = "0";
+			}
+			else
+			{
+				int iCnt = int.Parse(Request["TextBox1"]);
+				TextBox1.Text = (iCnt + 1).ToString();
+			}
 
 		}
 	}

@@ -14,8 +14,6 @@ namespace frmwk
 		void Application_Start(object sender, EventArgs e)
 		{
 			// アプリケーションのスタートアップで実行するコードです
-			RouteConfig.RegisterRoutes(RouteTable.Routes);
-			BundleConfig.RegisterBundles(BundleTable.Bundles);
 		}
 	}
 }
